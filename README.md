@@ -1,5 +1,6 @@
 # Portfolio-Website
 Developing a portfolio website for future employment and employers.
+
 TECHNOLOGIES/SUPPLIES:
 I utilized HTML, CSS for styling, and JavaScript for interactivity.
 METHOD:
