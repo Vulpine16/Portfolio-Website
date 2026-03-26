@@ -1,15 +1,100 @@
 /*HTML*/
-.body {
-    background-color: #353A39;
-    
+.html {
+    scroll-snap-type: y mandatory;
+    timeline-scope: --header, --article, --footer;
+    background-color: #0D0D0D;
+
 }
 /*Header*/
 
 /*Main*/
+.color-bleed-effect {
+    mix-blend-mode: screen;
+}
 .main {
     color: white;
+    font-family: 'Heavy Heap';
+    view-timeline: --main;
+    mix-blend-mode: screen;
+    animation: blink ease-in-out both;
+    animation-timeline: --header;
+}
+/*@keyframes blink {
+  0%,
+  100% {
+    filter: blur(var(--blur)) contrast(var(--contrast));
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  50% {
+    filter: blur(0) contrast(1);
+    opacity: 1;
+    visibility: visible;
+  }
+}*/
+.header {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-left: 826px;
+    padding-top: 25px;
+    padding-bottom: 100px;
+    font-size: 125px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    view-timeline: --header;
+    height: 100dvh;
+}
+.header-1 {
+    position: relative;
+    right: 150px;
+    --contrast: 4;
+    --blur: 0.5rem;
+    
+}
+.header-2 {
+    position: relative;
+    right: 400px;
+}
+.body {
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.article {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    view-timeline: --article;
+    height: 80dvh;
+}
+.about-me {
+    font-weight: 300;
+    font-size: 135px;
+    text-transform: uppercase;
+    margin-left: 650px;
+}
+.p {
+    font-size: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 /*Footer*/
 .footer {
     color: white;
+    font-family: 'Heavy Heap';
+    padding-bottom: 150px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    view-timeline: --footer;
+    height: 80dvh;
+}
+.contact {
+    font-size: 125px;
+    text-transform: uppercase;
+    margin-left: 550px;
+}
+.github-link {
+    margin-left: 550px;
+}
+.linkedin-link {
+    margin-left: 280px;
 }
