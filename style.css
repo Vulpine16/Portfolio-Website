@@ -19,20 +19,6 @@
     animation: blink ease-in-out both;
     animation-timeline: --header;
 }
-/*@keyframes blink {
-  0%,
-  100% {
-    filter: blur(var(--blur)) contrast(var(--contrast));
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  50% {
-    filter: blur(0) contrast(1);
-    opacity: 1;
-    visibility: visible;
-  }
-}*/
 .header {
     letter-spacing: 5px;
     text-transform: uppercase;
